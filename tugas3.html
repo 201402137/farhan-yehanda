@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Matematika Java  Script</title>
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   <script>
+        
+        function tambah() { 
+            a = document.mtk.a.value; 
+            b = document.mtk.b.value; 
+
+            
+            tambah = Number (a) + Number(b); 
+           
+            Swal.fire("Hasil Penjumlahan Adalah: "+tambah)
+            
+        } 
+        
+        
+          function kurang() { 
+            a = document.mtk.a.value; 
+            b = document.mtk.b.value; 
+
+            
+            kurang = Number (a) - Number(b); 
+
+            Swal.fire("Hasil Pengurangan Adalah: "+kurang)
+
+        } 
+
+
+        
+
+        function kali() { 
+
+            a=document.mtk.a.value; 
+            b=document.mtk.b.value; 
+
+            kali = Number (a) * Number(b); 
+
+           Swal.fire("Hasil Perkalian Adalah: "+kali) 
+
+            
+        }
+
+        function bagi() { 
+
+            a=document.mtk.a.value; 
+            b=document.mtk.b.value; 
+
+            bagi = Number (a) /  Number(b); 
+
+           Swal.fire("Hasil Pembagian Adalah: " +bagi) 
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1 align="center">OPERASI MATEMATIKA SEDERHANA</h1>
+    <form name="mtk"align="center" >
+        <input type="text" name="a" placeholder="Masukkan Bilangan 1"><br><br> 
+        <input type="tex"  name="b" placeholder="Masukkan Bilangan 2"><br><br>
+        <input type="button"  onclick="tambah()"  value="+">
+        <input type="button"  onclick="kurang()" value="-"> 
+        <input type="button"  onclick="bagi  ()" value="/">
+        <input type="button"  onclick="kali  ()" value="*">
+    
+       
+    </form>
+
+        
+    
+
+</body>
+</html>
